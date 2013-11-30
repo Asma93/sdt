@@ -1,0 +1,24 @@
+PROJECT PROPOSAL
+Software Development Technologies
+Submitted by: Anam Fatima 1263
+                          Asma Hamza Bhatti 1352
+                         Maria Akhtar 1272
+                         Maryum Afzal 1277
+
+
+Submitted to:  Sir Kashif Iftikhar
+
+
+
+
+Submitted on: 1st December 2013
+
+
+
+ Commands 
+Create database cashcarry
+Create table employee( cnic int primary key, name varchar(50), age int , gender varchar(50), job varchar(50), salary int , email varchar(50));
+Create table supplier(supplier_id int primary key, name varchar(50), email varchar(50),phone varchar(50));
+Create table product(barcode_number int primary key, name varchar(50), product_type varchar(50),price int, quantity int , supplier_id int , foreign key(supplier_id) references supplier(supplier_id) on delete cascade on update restrict);
+Create table sales(dates date primary key, sale int);
+
